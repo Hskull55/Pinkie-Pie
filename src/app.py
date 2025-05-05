@@ -9,12 +9,13 @@ locale.setlocale(locale.LC_TIME, '')
 @app.route('/')
 def homepage():
     # TEST 2: Ahora es personal
-    xyz = "Variable no usada para error linter"
+    # xyz = "Variable no usada para error linter"
     the_time = datetime.now().strftime("%A, %d %b %Y %H:%M")
 
     # Render HTML with variable
-    return render_template("index.html", the_time=the_time, tema="dog", 
+    return render_template("index.html", the_time=the_time, tema="dog",
                            alto="600", ancho="920")
+
 
 @app.route('/status')
 def status():
