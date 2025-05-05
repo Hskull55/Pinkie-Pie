@@ -8,6 +8,7 @@ locale.setlocale(locale.LC_TIME, '')
 
 @app.route('/')
 def homepage():
+    # TEST
     xyz = "Variable no usada para error linter"
     the_time = datetime.now().strftime("%A, %d %b %Y %H:%M")
 
